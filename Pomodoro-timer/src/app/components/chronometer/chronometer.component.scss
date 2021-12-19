@@ -1,0 +1,89 @@
+@import '../../../assets/scss/style.scss';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: $background-color;
+    color: $white;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(30% 53% at 52% 51%, #3A393F 0%, #17171A 100%);
+}
+
+::ng-deep .mat-progress-spinner.mat-warn circle, .mat-spinner.mat-warn circle {
+    stroke: $red;
+}
+
+::ng-deep .mat-progress-spinner.mat-primary circle, .mat-spinner.mat-primary circle {
+    stroke: $green;
+}
+
+mat-progress-spinner {
+    width: 45vw !important;
+    height: 90vh !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+::ng-deep .mat-progress-spinner svg {
+    width: 45vw !important;
+    height: 90vh !important;
+}
+
+.circle {
+    width: 40vw;
+    height: 85vh;
+    border-radius: 50%;
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+
+    .chrono-inside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .time {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1.5rem;
+
+            h1 {
+                font-family: 'BebasNeue Book', sans-serif;
+                font-weight: 400;
+                font-size: 12.25rem;
+                line-height: 12.25rem;
+
+                &.separation {
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            size: 1rem;
+            line-height: 1.2rem;
+            letter-spacing: 0.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        mat-icon {
+            color: rgb(66, 66, 67);
+        }
+    }
+
+}
+

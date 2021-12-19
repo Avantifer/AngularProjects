@@ -1,0 +1,18 @@
+<body>
+    <mat-progress-spinner [color]="value == 100 ? 'primary' : 'warn'" mode="determinate" [value]="100"></mat-progress-spinner>
+    <div class="circle">
+        <div class="chrono-inside">
+            <div class="time">
+                <h1 *ngIf="minutes >= 0 && minutes <= 9">{{firstZero}}</h1>
+                <h1>{{minutes}}</h1>
+                <h1 class="separation">:</h1>
+                <h1 *ngIf="seconds >= 0 && seconds <= 9">{{firstZero}}</h1>
+                <h1>{{seconds}}</h1>
+            </div>
+            <span (click)="logicChrono()">{{startStop}}</span>
+            <button mat-icon-button>
+                <mat-icon>settings</mat-icon>
+            </button>
+        </div>
+    </div>
+</body>
