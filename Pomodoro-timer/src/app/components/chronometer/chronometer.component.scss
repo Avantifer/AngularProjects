@@ -25,8 +25,8 @@ body {
 }
 
 mat-progress-spinner {
-    width: 45vw !important;
-    height: 90vh !important;
+    width: 88vh !important;
+    height: 88vh !important;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -35,12 +35,12 @@ mat-progress-spinner {
 }
 
 ::ng-deep .mat-progress-spinner svg {
-    width: 45vw !important;
-    height: 90vh !important;
+    width: 88vh !important;
+    height: 88vh !important;
 }
 
 .circle {
-    width: 40vw;
+    width: 85vh;
     height: 85vh;
     border-radius: 50%;
     background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
@@ -84,6 +84,68 @@ mat-progress-spinner {
             color: rgb(66, 66, 67);
         }
     }
-
 }
 
+@media (max-width : 426px) {
+    body {
+        background: radial-gradient(46% 32% at 50% 50%, #3A393F 0%, #17171A 100%);
+    }
+    
+    mat-progress-spinner {
+        width: 40vh !important;
+        height: 40vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 40vh !important;
+        height: 40vh !important;
+    }
+    
+    .circle {
+        width: 36vh !important;
+        height: 36vh !important;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 768px) {
+    body {
+        background: radial-gradient(46% 32% at 50% 50%, #3A393F 0%, #17171A 100%);
+    }
+    
+    mat-progress-spinner {
+        width: 68vh !important;
+        height: 68vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 68vh !important;
+        height: 68vh !important;
+    }
+    
+    .circle {
+        width: 64vh !important;
+        height: 64vh !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    mat-progress-spinner {
+        width: 74vh !important;
+        height: 74vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 74vh !important;
+        height: 74vh !important;
+    }
+    
+    .circle {
+        width: 70vh !important;
+        height: 70vh !important;
+    }
+}
