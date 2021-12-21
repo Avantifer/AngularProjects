@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { GearComponent } from '../gear/gear.component';
 
 @Component({
   selector: 'app-chronometer',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChronometerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog : MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -28,27 +30,24 @@ export class ChronometerComponent implements OnInit {
       this.chrono();
       this.clicked = true;
       this.startStop = 'STOP';
-      console.log(this.totalSeconds);
     } else {
       this.clicked = false;
       this.startStop = 'START';
     }
   }
 
-  // ? Funciona el conometro, cambiar el color de una linea cuando termine el cronometro.
   chrono() : void{
     if (this.minutes != 0 || this.seconds != 0) {
       let toZero = setInterval(() => {
         this.countSeconds++;
         this.value = (this.countSeconds/this.totalSeconds) * 100;
-    
+
         if (this.seconds == 0) {
           this.seconds = 59;
           this.minutes--;
         }else {
           this.seconds--;
         }
-        
         
         if (this.minutes == 0 && this.seconds == 0){
           clearInterval(toZero);
@@ -67,5 +66,19 @@ export class ChronometerComponent implements OnInit {
     }else {
       return this.seconds;
     }
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(GearComponent, {data :
+      {minutes : this.minutes, seconds : this.seconds}
+    });
+
+    dialogRef.afterClosed().subscribe( (result) => {
+      this.minutes = result.minutes;
+      this.seconds = result.seconds;
+      this.totalSeconds = this.calculateSeconds();
+      this.value = 0;
+      this.countSeconds = 0;
+    })
   }
 }

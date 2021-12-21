@@ -1,5 +1,5 @@
 <body>
-    <mat-progress-spinner [color]="value == 100 ? 'primary' : 'warn'" mode="determinate" [value]="100"></mat-progress-spinner>
+    <mat-progress-spinner [color]="value == 100 ? 'primary' : 'warn'" mode="determinate" [value]="value"></mat-progress-spinner>
     <div class="circle">
         <div class="chrono-inside">
             <div class="time">
@@ -10,7 +10,7 @@
                 <h1>{{seconds}}</h1>
             </div>
             <span (click)="logicChrono()">{{startStop}}</span>
-            <button mat-icon-button>
+            <button mat-icon-button (click)="openDialog()">
                 <mat-icon>settings</mat-icon>
             </button>
         </div>

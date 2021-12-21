@@ -1,0 +1,37 @@
+body {
+    display: grid !important;
+    place-items: center !important;
+    color: rgb(255, 255, 255);
+    
+    & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h2 {
+            margin-right: 1rem;
+        }
+
+    }
+
+    span {
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width : 426px) {
+    h2 {
+        font-size: 0.6rem !important;
+        margin-right: 0 !important;
+    }
+
+    h3 {
+        font-size: 0.6rem !important;
+    }
+
+    span {
+        font-size: 1rem !important;
+    }
+}

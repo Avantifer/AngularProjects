@@ -86,6 +86,14 @@ mat-progress-spinner {
     }
 }
 
+::ng-deep .mat-dialog-container {
+    width: 85vh !important;
+    height: 85vh !important;
+    border-radius: 50% !important;
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+}
+
+
 @media (max-width : 426px) {
     body {
         background: radial-gradient(46% 32% at 50% 50%, #3A393F 0%, #17171A 100%);
@@ -110,6 +118,11 @@ mat-progress-spinner {
         font-size: 4rem !important;
         line-height: 4rem !important;
     }
+
+    ::ng-deep .mat-dialog-container {
+        width: 36vh !important;
+        height: 36vh !important;
+    }
 }
 
 @media (min-width: 427px) and (max-width: 768px) {
@@ -131,6 +144,11 @@ mat-progress-spinner {
         width: 64vh !important;
         height: 64vh !important;
     }
+
+    ::ng-deep .mat-dialog-container {
+        width: 64vh !important;
+        height: 64vh !important;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -145,6 +163,11 @@ mat-progress-spinner {
     }
     
     .circle {
+        width: 70vh !important;
+        height: 70vh !important;
+    }
+
+    ::ng-deep .mat-dialog-container {
         width: 70vh !important;
         height: 70vh !important;
     }

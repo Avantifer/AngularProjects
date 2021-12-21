@@ -1,0 +1,13 @@
+<body>
+    <div class="minutes">
+        <h2>Minutes :</h2>
+        <mat-slider thumbLabel [displayWith]="formatMinutes" [(ngModel)]="newMinutes" step="1" min="0" max="60"></mat-slider>
+        <h3>{{newMinutes}}</h3>
+    </div>
+    <div class="seconds">
+        <h2>Seconds :</h2>
+        <mat-slider thumbLabel [displayWith]="formatSeconds" [(ngModel)]="newSeconds" step="1" min="0" max="60"></mat-slider>
+        <h3>{{newSeconds}}</h3>
+    </div>
+    <span (click)="closeDialog()">Change Time</span>
+</body>
