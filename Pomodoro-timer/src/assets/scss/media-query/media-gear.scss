@@ -1,0 +1,14 @@
+@include respond(phone) {
+    h2 {
+        font-size: 0.6rem !important;
+        margin-right: 0 !important;
+    }
+
+    h3 {
+        font-size: 0.6rem !important;
+    }
+
+    span {
+        font-size: 1rem !important;
+    }
+}

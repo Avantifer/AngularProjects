@@ -1,2 +1,14 @@
 @import 'settings/variables.scss';
 @import 'settings/fonts.scss';
+
+@import 'utilities/mixins.scss';
+
+@import 'elements/headings.scss';
+
+@import 'components/circle.scss';
+@import 'components/progress-bar.scss';
+@import 'components/dialog.scss';
+
+@import 'generic/flex.scss';
+@import 'generic/reset.scss';
+@import 'generic/grid.scss';

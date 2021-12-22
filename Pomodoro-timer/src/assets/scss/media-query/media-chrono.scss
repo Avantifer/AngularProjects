@@ -1,0 +1,78 @@
+@include respond(phone) {
+    body {
+        background: radial-gradient(46% 32% at 50% 50%, #3A393F 0%, #17171A 100%);
+    }
+    
+    mat-progress-spinner {
+        width: 40vh !important;
+        height: 40vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 40vh !important;
+        height: 40vh !important;
+    }
+    
+    .circle {
+        width: 36vh !important;
+        height: 36vh !important;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+    }
+
+    ::ng-deep .mat-dialog-container {
+        width: 36vh !important;
+        height: 36vh !important;
+    }
+}
+
+@include respond(tablet) {
+    body {
+        background: radial-gradient(46% 32% at 50% 50%, #3A393F 0%, #17171A 100%);
+    }
+    
+    mat-progress-spinner {
+        width: 68vh !important;
+        height: 68vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 68vh !important;
+        height: 68vh !important;
+    }
+    
+    .circle {
+        width: 64vh !important;
+        height: 64vh !important;
+    }
+
+    ::ng-deep .mat-dialog-container {
+        width: 64vh !important;
+        height: 64vh !important;
+    }
+}
+
+@include respond(laptop) {
+    mat-progress-spinner {
+        width: 74vh !important;
+        height: 74vh !important;
+    }
+    
+    ::ng-deep .mat-progress-spinner svg {
+        width: 74vh !important;
+        height: 74vh !important;
+    }
+    
+    .circle {
+        width: 70vh !important;
+        height: 70vh !important;
+    }
+
+    ::ng-deep .mat-dialog-container {
+        width: 70vh !important;
+        height: 70vh !important;
+    }
+}

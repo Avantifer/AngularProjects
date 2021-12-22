@@ -1,0 +1,9 @@
+.circle {
+    width: 85vh;
+    height: 85vh;
+    border-radius: 50%;
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}

@@ -1,0 +1,23 @@
+mat-progress-spinner {
+    width: 88vh !important;
+    height: 88vh !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+::ng-deep .mat-progress-spinner.mat-warn circle, .mat-spinner.mat-warn circle {
+    stroke: $red;
+}
+
+::ng-deep .mat-progress-spinner.mat-primary circle, .mat-spinner.mat-primary circle {
+    stroke: $green;
+}
+
+
+::ng-deep .mat-progress-spinner svg {
+    width: 88vh !important;
+    height: 88vh !important;
+}
