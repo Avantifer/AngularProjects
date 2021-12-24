@@ -1,1 +1,15 @@
-<p>menu works!</p>
+<body>
+    <h2>To Go Menu</h2>
+    <div class="plates">
+        <div *ngFor="let plate of cart">
+            <div [class]="plate.plate" class="plate">
+                <img [src]="plate.image" alt="The image of the plate">
+                <p>{{plate.title}}</p>
+                <h2>{{plate.price}}€</h2>
+                <div (click)="addToCart($event, plate.number, plate)" class="btn__bottom btn__bottom__{{plate.number}} noClicked noClicked__{{plate.number}}">
+                    <p class="p__{{plate.plate}}">Add to Cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

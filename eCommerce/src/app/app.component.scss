@@ -1,0 +1,64 @@
+@import '../assets/scss/style.scss';
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: $background-color;
+
+    .background {
+        position: absolute;
+        z-index: 0;
+        
+        &-right-bottom {
+            right: -6rem;
+            bottom: -6rem;
+        }
+
+        &-right-top {
+            right: -6rem;
+            top: -6rem;
+        }
+
+        &-left {
+            left: -6rem;
+        }
+    }
+
+    app-menu {
+        z-index: 2;
+    }
+
+    app-cart {
+        z-index: 2;
+    }
+}
+
+@media (max-width: 767px){
+    body {
+        padding: 17rem 0 5rem 0;
+        flex-direction: column !important;
+        align-items: center;
+
+        .background-right-bottom {
+            bottom: -24rem;
+        }
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width : 1024px) {
+    body {
+        padding: 30rem 0 5rem 0;
+        flex-direction: column !important;
+        align-items: center;
+
+        .background-right-bottom {
+            bottom: -37rem;
+        }
+    }
+}

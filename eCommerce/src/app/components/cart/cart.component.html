@@ -1,1 +1,44 @@
-<p>cart works!</p>
+<body>
+    <h2>Your Cart</h2>
+    <h1 *ngIf="arrPlates.length === 0">Your cart is empty</h1>
+    <div class="plates" *ngIf="arrPlates.length > 0">
+        <div *ngFor="let plate of arrPlates">
+            <div class="plate {{plate.plate}}">
+                <img src="{{plate.image}}" alt="Image of the plate">
+                <div class="circle__position">
+                    <p>{{plate.position}}</p>
+                </div>
+                <div class="cartPlate">
+                    <p>{{plate.title}}</p>
+                    <p class="price">{{plate.price}}€</p>
+                    <div class="quantityProduct">
+                        <div class="circle" (click)="decrease(plate.position)"> 
+                            <img src="../../../assets/img/chevron.svg" class="chevron" alt="">
+                        </div>
+                        <p class="quantity">{{plate.quantity}}</p>
+                        <div class="circle" (click)="increase(plate.position)">
+                            <img src="../../../assets/img/chevron.svg" class="chevronReverse" alt="">
+                        </div>
+                        <h3>{{plate.totalPrice}}€</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="light-line" *ngIf="arrPlates.length >=2"></div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="prices" *ngIf="arrPlates.length > 0">
+        <div class="subtotal">
+            <h3>Subtotal : </h3>
+            <h2>{{subtotal}}€</h2>
+        </div>
+        <div class="iva">
+            <h3>Tax : </h3>
+            <h2>{{taxes}}€</h2>
+        </div>
+        <div class="total">
+            <h3>Total : </h3>
+            <h2>{{total}}€</h2>
+        </div>
+    </div>
+</body>

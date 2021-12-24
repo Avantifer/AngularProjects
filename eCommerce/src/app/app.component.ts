@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eCommerce';
+
+  plateSelected : any;
+  
+  countChangedHandler(algo : any) {
+    this.plateSelected = algo;
+  }
 }

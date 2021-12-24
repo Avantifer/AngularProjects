@@ -1,1 +1,80 @@
 @import '../../../assets/scss/style.scss';
+
+body {
+    width: calc(50vh - 2rem);
+    height: 80vh;
+    margin-top: 10vh;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 70px #c7cbe3;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0 0 4rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+    .plates {
+        margin-top: 3rem;
+
+        .plate {
+
+            &__0, &__1, &__2, &__3, &__4, &__5 {
+                padding: 1.25rem;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom-left-radius: 2rem;
+                margin-bottom: 4rem;
+            }
+            
+            &__0, &__3{
+                background-color: $light-blue;
+            }
+
+            &__1, &__4 {
+                background-color: $pink;
+            }
+
+            &__2, &__5 {
+                background-color: $green;
+            }
+            
+            p {
+                width: 50%;
+                margin-left: 3.5rem;
+            }
+
+            img {
+                position: absolute;
+                top: -2rem;
+                left: -2rem;
+                width: 8rem;
+                height: 8rem;
+            }
+
+            .btn__bottom {
+                position: absolute;
+                bottom: -1rem;
+                display: flex;
+                flex-direction: row-reverse;
+                color: rgb(255, 255, 255);
+                border-radius: 2rem;
+                padding: 0.2rem 1rem;
+                cursor: pointer;
+                
+                p {
+                    margin: 0;
+                    width: 100%;
+                    font-weight: 600;
+                }
+            }
+            
+            .noClicked {
+                background-color: $primary-purple;
+            }
+
+            .clicked {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
