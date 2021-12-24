@@ -1,0 +1,35 @@
+.plate {
+
+    &__0, &__1, &__2, &__3, &__4, &__5 {
+        padding: 1.25rem;
+        position: relative;
+        align-items: center;
+        border-bottom-left-radius: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    &__0, &__3{
+        background-color: $light-blue;
+    }
+
+    &__1, &__4 {
+        background-color: $pink;
+    }
+
+    &__2, &__5 {
+        background-color: $green;
+    }
+
+    &__title {
+        width: 50%;
+        margin-left: 3.5rem;
+    }
+
+    &__image {
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        width: 8rem;
+        height: 8rem;
+    }
+}

@@ -1,7 +1,7 @@
-<body>
-  <img src="../assets/img/bg__btm-right.svg" class="background background-right-bottom" alt="Background image right bottom">
-  <img src="../assets/img/bg__top-right.svg" class="background background-right-top" alt="Background image right top">
-  <img src="../assets/img/bg__left.svg" class="background background-left" alt="Background image left">
+<body class="flexRow">
+  <img src="../assets/img/bg__btm-right.svg" class="background background__right background__bottom" alt="Background image right bottom">
+  <img src="../assets/img/bg__top-right.svg" class="background background__right background__top" alt="Background image right top">
+  <img src="../assets/img/bg__left.svg" class="background background__left" alt="Background image left">
   <app-menu (plateSelected)="countChangedHandler($event)"></app-menu>
   <app-cart [plateSelected]="plateSelected"></app-cart>
 </body>

@@ -1,0 +1,19 @@
+.background {
+    position: absolute;
+    
+    &__right {
+        right: -6rem;
+    }
+
+    &__bottom {
+        bottom: -6rem;
+    }
+
+    &__top {
+        top: -6rem;
+    }
+
+    &__left {
+        left: -6rem;
+    }
+}

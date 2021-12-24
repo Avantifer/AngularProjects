@@ -1,0 +1,24 @@
+@include respond(phone) {
+    body {
+        padding: 17rem 0 5rem 0;
+        flex-direction: column !important;
+        align-items: center;
+
+        .background-right-bottom {
+            bottom: -24rem;
+        }
+        
+    }
+}
+
+@include respond(tablet) {
+    body {
+        padding: 30rem 0 5rem 0;
+        flex-direction: column !important;
+        align-items: center;
+
+        .background-right-bottom {
+            bottom: -37rem;
+        }
+    }
+}

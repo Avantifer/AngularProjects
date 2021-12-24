@@ -1,0 +1,69 @@
+.cartPlate {
+    position: relative;
+
+    &__image {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1rem;
+    }
+
+    &__position {
+        background-color: $black;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        color: $white;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 2.19rem;
+        left: 2.16rem;
+    }
+
+    &__information {
+
+        &__title {
+            font-size: 0.8rem;
+        }
+
+        &__price {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        &__quantityWrapper {
+            align-items: center;
+
+            &__quantityNumber {
+                margin: 0 1rem;
+            }
+
+            &__circle {
+                background-color: $primary-purple;
+                border-radius: 50%;
+                width: 1.5rem;
+                height: 1.5rem;
+                align-items: center;
+                cursor: pointer;
+
+                &__image {
+                    width: 1.2rem;
+                    height: 1.2rem;
+
+                    &__left {
+                        margin-left: 0.25rem;
+                    }
+
+                    &__right {
+                        transform: rotate(180deg);
+                        margin-left: 0.45rem;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+} 

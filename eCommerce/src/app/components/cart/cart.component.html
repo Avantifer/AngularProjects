@@ -1,42 +1,42 @@
 <body>
-    <h2>Your Cart</h2>
-    <h1 *ngIf="arrPlates.length === 0">Your cart is empty</h1>
+    <h2 class="title">Your Cart</h2>
+    <h1 class="noCart" *ngIf="arrPlates.length === 0">Your cart is empty</h1>
     <div class="plates" *ngIf="arrPlates.length > 0">
         <div *ngFor="let plate of arrPlates">
-            <div class="plate {{plate.plate}}">
-                <img src="{{plate.image}}" alt="Image of the plate">
-                <div class="circle__position">
+            <div class="cartPlate flexRow">
+                <img src="{{plate.image}}" class="cartPlate__image" alt="Image of the plate">
+                <div class="cartPlate__position flexRow">
                     <p>{{plate.position}}</p>
                 </div>
-                <div class="cartPlate">
-                    <p>{{plate.title}}</p>
-                    <p class="price">{{plate.price}}€</p>
-                    <div class="quantityProduct">
-                        <div class="circle" (click)="decrease(plate.position)"> 
-                            <img src="../../../assets/img/chevron.svg" class="chevron" alt="">
+                <div class="cartPlate__information flexColumn">
+                    <p class="cartPlate__information__title">{{plate.title}}</p>
+                    <p class="cartPlate__information__price">{{plate.price}}€</p>
+                    <div class="cartPlate__information__quantityWrapper flexRow">
+                        <div class="cartPlate__information__quantityWrapper__circle flexRow" (click)="decrease(plate.position)"> 
+                            <img src="../../../assets/img/chevron.svg" class="cartPlate__information__quantityWrapper__circle__image__left" alt="">
                         </div>
-                        <p class="quantity">{{plate.quantity}}</p>
-                        <div class="circle" (click)="increase(plate.position)">
-                            <img src="../../../assets/img/chevron.svg" class="chevronReverse" alt="">
+                        <p class="cartPlate__information__quantityWrapper__quantityNumber">{{plate.quantity}}</p>
+                        <div class="cartPlate__information__quantityWrapper__circle flexRow" (click)="increase(plate.position)">
+                            <img src="../../../assets/img/chevron.svg" class="cartPlate__information__quantityWrapper__circle__image__right" alt="">
                         </div>
                         <h3>{{plate.totalPrice}}€</h3>
                     </div>
                 </div>
             </div>
-            <div class="light-line" *ngIf="arrPlates.length >=2"></div>
+            <div class="line__light" *ngIf="arrPlates.length >=2"></div>
         </div>
     </div>
     <div class="line"></div>
-    <div class="prices" *ngIf="arrPlates.length > 0">
-        <div class="subtotal">
+    <div class="prices flexColumn" *ngIf="arrPlates.length > 0">
+        <div class="prices__subtotal flexRow">
             <h3>Subtotal : </h3>
             <h2>{{subtotal}}€</h2>
         </div>
-        <div class="iva">
+        <div class="prices__taxes flexRow">
             <h3>Tax : </h3>
             <h2>{{taxes}}€</h2>
         </div>
-        <div class="total">
+        <div class="prices__total flexRow">
             <h3>Total : </h3>
             <h2>{{total}}€</h2>
         </div>

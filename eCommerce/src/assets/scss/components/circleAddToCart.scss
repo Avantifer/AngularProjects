@@ -1,0 +1,21 @@
+.circleAddToCart {
+    position: absolute;
+    bottom: -1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    color: rgb(255, 255, 255);
+    background-color: $primary-purple;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+        width: 100%;
+        font-weight: 600;
+    }
+}
+
+.clicked {
+    background-color: rgb(0, 0, 0) !important;
+}

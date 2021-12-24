@@ -1,3 +1,14 @@
 @import 'settings/variables.scss';
 
 @import 'generic/reset.scss';
+@import 'generic/flex.scss';
+
+@import 'utilities/mixins.scss';
+
+@import 'components/circleAddToCart.scss';
+@import 'components/platesContainer.scss';
+@import 'components/cartPlates.scss';
+@import 'components/prices.scss';
+@import 'components/background.scss';
+
+@import 'objects/lines.scss';

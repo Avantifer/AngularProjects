@@ -28,12 +28,12 @@ export class MenuComponent implements OnInit {
     let previousDiv = document.querySelector('.noClicked__' + cart.number)
     if (previousDiv) {
       if (event.target.localName === 'p') {
-        event.path[1].classList.value = 'btn__bottom btn__bottom__' + cart.number + ' clicked';
+        event.path[1].classList.value = 'circleAddToCart clicked circleAddToCart__' +  cart.number;
       }else {
-        event.target.classList.value = 'btn__bottom btn__bottom__' + cart.number + ' clicked';
+        event.target.classList.value = 'circleAddToCart clicked circleAddToCart__' +  cart.number;
       }
 
-      let div = this.elementRef.nativeElement.querySelector('.btn__bottom__' + cart.number);
+      let div = this.elementRef.nativeElement.querySelector('.circleAddToCart__' + cart.number);
       let img = document.createElement('img');
       img.classList.add('image');
       img.src = '../../../assets/img/check.svg';

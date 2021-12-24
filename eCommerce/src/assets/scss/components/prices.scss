@@ -1,0 +1,17 @@
+.prices {
+    align-items: flex-end;
+
+    &__subtotal, &__taxes, &__total {
+        align-items: center;
+        margin-top: 1rem;
+
+        h2 {
+            margin: 0 0 0 1rem;
+        }
+    }
+
+    .total {
+        margin-bottom: 1rem;
+        color: $primary-purple;
+    }
+}
