@@ -12,4 +12,10 @@ export class PianoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sound(num : number){
+    let audio = new Audio();
+    audio.src = '../../../assets/audio/key-' + num + '.mp3'; 
+    audio.load();
+    audio.play();
+  }
 }

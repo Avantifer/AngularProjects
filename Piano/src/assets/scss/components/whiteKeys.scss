@@ -1,0 +1,12 @@
+.piano {
+    &__white {
+        height: 100%;
+        width: 6.15vw;
+        background-color: $white;
+        border: 1px solid $black;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}
