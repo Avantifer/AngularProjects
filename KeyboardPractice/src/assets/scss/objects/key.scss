@@ -1,0 +1,38 @@
+.keyboard {
+    &__line {
+        &__key {
+            padding: 1.25rem 1.5rem;
+            min-width: 1rem;
+            background-color: $white;
+            border-radius: 1rem;
+            text-align: center;
+            cursor: pointer;
+
+            &:not(:last-of-type) {
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                background-color: $yellow;
+                color: $black !important;
+            }
+
+            &__selected {
+                background-color: $light-blue;
+                color: $white !important;
+                animation: shake 1s infinite;
+            }
+
+            &__utility {
+                color: $gray;
+                flex: auto;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
