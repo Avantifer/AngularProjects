@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RangeSliderComponent } from './components/range-slider/range-slider.component';
+import { FormsModule } from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { RangeSliderComponent } from './components/range-slider/range-slider.com
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSliderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
