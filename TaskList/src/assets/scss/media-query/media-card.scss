@@ -1,0 +1,47 @@
+@import '../utilities/mixins.scss';
+
+@include respond(phone) {
+    .card {
+        flex-direction: column !important;
+
+        &__image {
+            width: 85% !important;
+
+            img {
+                transform: translateY(0) !important;
+            }
+        }
+        
+        &__tasks {
+            width: 55% !important;
+            padding: 2rem 2.8rem !important;   
+            
+            p {
+                font-size: 0.75rem !important;
+            }
+        }
+    }
+}
+
+@include respond(tablet) {
+    .card {
+        flex-direction: column !important;
+
+        &__image {
+            width: 85% !important;
+
+            img {
+                transform: translateY(0) !important;
+            }
+        }
+        
+        &__tasks {
+            width: 65% !important;
+            padding: 4rem 5rem !important;   
+            
+            p {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
