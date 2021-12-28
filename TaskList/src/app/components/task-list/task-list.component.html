@@ -1,1 +1,20 @@
-<p>task-list works!</p>
+<body class="flexRow">
+    <div class="card flexRow">
+        <div class="card__image">
+            <img src="../../../assets/images/podcast-cover.png" alt="Image od the cover">
+        </div>
+        <div class="card__tasks" [formGroup]="tasks">
+            <h5 class="card__tasks__title">Listen to all the compressed.fm episodes</h5>
+            <p><mat-checkbox id="firstTask" formControlName="firstTask">1 || Trailer</mat-checkbox></p>
+            <p><mat-checkbox id="secondTask" formControlName="secondTask">2 || James Q Quick Origin Story</mat-checkbox></p>
+            <p><mat-checkbox id="thirdTask" formControlName="thirdTask">3 || Amy Dutton's Origin Story</mat-checkbox></p>
+            <p><mat-checkbox id="fourthTask" formControlName="fourthTask">4 || Starting a New Development Project</mat-checkbox></p>
+            <p><mat-checkbox id="fifthTask" formControlName="fifthTask">5 || How Do you Start a New Design Project?</mat-checkbox></p>
+            <p><mat-checkbox id="sixthTask" formControlName="sixthTask">6 || Freelancing (Part 1)</mat-checkbox></p>
+            <p><mat-checkbox id="seventhTask" formControlName="seventhTask">7 || Freelancing (Part 2)</mat-checkbox></p>
+            <p><mat-checkbox id="eighthTask" formControlName="eighthTask">8 || The Tech Behind jamesqquick.com</mat-checkbox></p>
+            <p><mat-checkbox id="ninthTask" formControlName="ninthTask">9 || The Tech Behind SelfTeach.me</mat-checkbox></p>
+            <p><mat-checkbox id="tenthTask" formControlName="tenthTask">10 || Tech Behind SelfTeach.me</mat-checkbox></p>
+        </div>
+    </div> 
+</body>
