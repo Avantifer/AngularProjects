@@ -1,32 +1,38 @@
-<body>
+<body class="flexRow">
     <div class="calculator">
         <div class="calculator__results">
-            <div class="calculator__results__tipAmount">
+            <div class="calculator__results__tipAmount flexRow">
                 <p>Tip Amount</p>
-                <h3>{{tipAmount}}€</h3>
+                <h1>{{tipAmount.toFixed(2)}}€</h1>
             </div>
-            <div class="calculator__results__totalPerson">
+            <div class="calculator__results__totalPerson flexRow">
                 <p>Total per Person</p>
-                <h3>{{totalPerson}}€</h3>
+                <h1>{{totalPerson.toFixed(2) == 'NaN' ? '0.00' : totalPerson.toFixed(2)}}€</h1>
             </div>
         </div>
-        <div class="calculator__inputs" [formGroup]="inputsValues">
-            <div class="calculator__inputs__billAmount">
-                <img src="../../../assets/images/dollar.svg" alt="dollar image">
-                <input matInput type="number" formControlName="billAmount">
+        <div class="calculator__inputs flexRow" [formGroup]="inputsValues">
+            <div class="calculator__inputs__billAmount flexColumn">
+                <div class="calculator__inputs__billAmount__input">
+                    <img src="../../../assets/images/dollar.svg" alt="dollar image">
+                    <input type="number" formControlName="billAmount">
+                </div>
+                <p>Bill Amount</p>
             </div>
-            <div class="calculator__inputs__numberPeople">
-                <img src="../../../assets/images/people.svg" alt="people image">
-                <input matInput type="number" formControlName="numberPeople">
+            <div class="calculator__inputs__numberPeople flexColumn">
+                <div class="calculator__inputs__numberPeople__input">
+                    <img src="../../../assets/images/people.svg" alt="people image">
+                    <input type="number" formControlName="numberPeople">
+                </div>
+                <p>Number of people</p>
             </div>
         </div>
-        <div class="calculator__percentages">
-            <button (click)="percentage = 5">5%</button>
-            <button (click)="percentage = 10">10%</button>
-            <button (click)="percentage = 15">15%</button>
-            <button (click)="percentage = 20">20%</button>
+        <div class="calculator__percentages flexRow">
+            <button (click)="percentage = 5" [class]="percentage === 5 ? 'selected' : null">5%</button>
+            <button (click)="percentage = 10" [class]="percentage === 10 ? 'selected' : null">10%</button>
+            <button (click)="percentage = 15" [class]="percentage === 15 ? 'selected' : null">15%</button>
+            <button (click)="percentage = 20" [class]="percentage === 20 ? 'selected' : null">20%</button>
         </div>
-        <div class="calculator__calculate">
+        <div class="calculator__calculate flexRow">
             <button (click)="calculate()">Calculate</button>
         </div>
     </div>

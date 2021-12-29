@@ -16,7 +16,7 @@ export class CalculatorComponent implements OnInit {
     })
   }
 
-  inputsValues: FormGroup = new FormGroup({})
+  inputsValues: FormGroup = new FormGroup({});
 
   billAmount : number = 0;
   numberPeople : number = 0;
@@ -27,8 +27,8 @@ export class CalculatorComponent implements OnInit {
   calculate() {
     this.billAmount = this.inputsValues.controls.billAmount.value;
     this.numberPeople = this.inputsValues.controls.numberPeople.value;
-    this.tipAmount = this.billAmount * (this.percentage / 100);
-    this.billAmount += this.tipAmount;
-    this.totalPerson = this.billAmount / this.numberPeople;
+    this.tipAmount = Math.round(this.billAmount * (this.percentage / 100) * 100)  / 100;
+    this.billAmount += Math.round(this.tipAmount * 100) / 100 ;
+    this.totalPerson = Math.round(this.billAmount / this.numberPeople * 100) / 100;
   }
 }
