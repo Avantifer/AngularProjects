@@ -1,1 +1,33 @@
-<p>calculator works!</p>
+<body>
+    <div class="calculator">
+        <div class="calculator__results">
+            <div class="calculator__results__tipAmount">
+                <p>Tip Amount</p>
+                <h3>{{tipAmount}}€</h3>
+            </div>
+            <div class="calculator__results__totalPerson">
+                <p>Total per Person</p>
+                <h3>{{totalPerson}}€</h3>
+            </div>
+        </div>
+        <div class="calculator__inputs" [formGroup]="inputsValues">
+            <div class="calculator__inputs__billAmount">
+                <img src="../../../assets/images/dollar.svg" alt="dollar image">
+                <input matInput type="number" formControlName="billAmount">
+            </div>
+            <div class="calculator__inputs__numberPeople">
+                <img src="../../../assets/images/people.svg" alt="people image">
+                <input matInput type="number" formControlName="numberPeople">
+            </div>
+        </div>
+        <div class="calculator__percentages">
+            <button (click)="percentage = 5">5%</button>
+            <button (click)="percentage = 10">10%</button>
+            <button (click)="percentage = 15">15%</button>
+            <button (click)="percentage = 20">20%</button>
+        </div>
+        <div class="calculator__calculate">
+            <button (click)="calculate()">Calculate</button>
+        </div>
+    </div>
+</body>

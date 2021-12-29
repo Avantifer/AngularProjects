@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fb : FormBuilder) { }
 
   ngOnInit(): void {
+    this.inputsValues = this.fb.group({
+      billAmount : 0,
+      numberPeople : 0,
+    })
   }
 
+  inputsValues: FormGroup = new FormGroup({})
+
+  billAmount : number = 0;
+  numberPeople : number = 0;
+  percentage : number = 5;
+  tipAmount : number = 0.00;
+  totalPerson : number = 0.00;
+
+  calculate() {
+    this.billAmount = this.inputsValues.controls.billAmount.value;
+    this.numberPeople = this.inputsValues.controls.numberPeople.value;
+    this.tipAmount = this.billAmount * (this.percentage / 100);
+    this.billAmount += this.tipAmount;
+    this.totalPerson = this.billAmount / this.numberPeople;
+  }
 }
