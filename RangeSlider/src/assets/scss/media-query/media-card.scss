@@ -1,0 +1,17 @@
+@import '../utilities/mixins.scss';
+
+@include respond(phone) {
+    .card {
+        padding: 2rem !important;
+
+        .mat-slider {
+            margin-top: 1rem !important;
+        }
+    }
+}
+
+@include respond(tablet) {
+    .card {
+        height: 35vh !important;
+    }
+}

@@ -1,4 +1,5 @@
 @import '../../../assets/scss/style.scss';
+@import '../../../assets/scss/media-query/media-card.scss';
 
 body {
     height: 100vh;
@@ -6,96 +7,4 @@ body {
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-
-    .card {
-        align-items: center;
-        box-shadow: 0px 0px 250px $black;
-        height: 50vh;
-        width: 100vh;
-        border-radius: 1.4rem;
-        padding: 3.75rem 5rem;
-
-        &__title {
-            color: $gold;
-            font-size: 6rem;
-        }
-
-        &__button {
-            background-color: $dark-gray;
-            border: none;
-            border-radius: 2rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: $white;
-            font-size: 1.75rem;
-            padding: 1.25rem 2.5rem;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $white;
-                color: $black;
-            }
-        }
-
-        .mat-slider {
-            width: 100%;
-            height: 8rem;
-            margin-top: 3rem;
-        }
-
-        ::ng-deep .mat-slider-horizontal .mat-slider-track-wrapper {
-            height: 1rem;
-            border-radius: 1rem;
-        }
-
-        ::ng-deep .mat-slider-horizontal .mat-slider-track-background {
-            height: 1rem;
-            border-radius: 1rem;
-        }
-
-        ::ng-deep .mat-slider-track-background {
-            background-color: $gray;
-        }
-
-        ::ng-deep .mat-slider-horizontal .mat-slider-track-fill {
-            height: 1rem;
-        }
-
-        ::ng-deep .mat-accent .mat-slider-track-fill, .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label {
-            background-color: $pink;
-        }
-
-        ::ng-deep .mat-slider-thumb {
-            right: -40px;
-            bottom: -40px;
-            height: 4rem;
-            width: 4rem;
-        }
-
-        ::ng-deep .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
-            background-color: $pink;
-            border-color: $pink;
-            transform: scale(1);
-        }
-
-        ::ng-deep .mat-accent .mat-slider-thumb{
-            background-color: $pink !important; 
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .card {
-        padding: 2rem !important;
-
-        .mat-slider {
-            margin-top: 1rem !important;
-        }
-    }
-}
-
-@media (min-width : 768px) and (max-width : 1023px) {
-    .card {
-        height: 35vh !important;
-    }
 }
