@@ -161,3 +161,47 @@ button {
     background-color: $light-blue !important;
     color: $white !important;
 }
+
+@media (max-width : 425px) {
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    body {
+        .calculator {
+            &__results {
+                &__tipAmount, &__totalPerson {
+                    padding: 2rem !important;
+                }
+            }
+
+            &__inputs {
+                justify-content: center;
+
+                &__billAmount {
+                    flex: none;
+                }
+
+                &__billAmount, &__numberPeople {
+                    padding: 2rem 1rem;
+
+                    input {
+                        font-size: 2.5rem;
+                        width: 5rem;
+                    }
+                }
+            }
+
+            &__percentages {
+                padding: 1rem;
+
+                button {
+                    font-size: 1.25rem;
+                    padding: 0.8rem 1.2rem;
+                    min-width: 0 !important;
+                }
+            }
+        }
+    }
+}
