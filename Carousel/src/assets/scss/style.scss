@@ -2,3 +2,12 @@
 
 @import 'generic/reset.scss';
 @import 'generic/flex.scss';
+
+@import 'utilities/mixins.scss';
+
+@import 'components/typography.scss';
+
+@import 'objects/carousel.scss';
+@import 'objects/laterals.scss';
+@import 'objects/slider.scss';
+@import 'objects/imageSelected.scss';

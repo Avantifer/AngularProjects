@@ -1,0 +1,16 @@
+.carousel {
+    height: 100%;
+
+    &__principal {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex: 1;
+        margin: 0 4.5rem;
+
+        &__image {
+            height: 24rem;
+            width: 24rem;
+        }
+    }
+}

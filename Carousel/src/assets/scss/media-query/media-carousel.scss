@@ -1,0 +1,18 @@
+@import '../style.scss';
+
+@include respond(phone) {
+    body {
+        p {
+            font-size: 0.6rem;
+        }
+
+        .carousel {
+            &__principal {
+                &__image {
+                    height: 10rem;
+                    width: 10rem;
+                }
+            }
+        }
+    }
+}

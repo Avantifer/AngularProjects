@@ -1,100 +1,25 @@
 @import '../../../assets/scss/style.scss';
+@import '../../../assets/scss/media-query/media-carousel.scss';
 
 body {
     height: 100vh;
 
-    p{
-        font-family: 'Roboto Mono', sans-serif;
-        font-size: 0.85rem;
+    p {
         margin-top: 1rem;
     }
 
     .carousel {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        
         &__lateral {
-            position: absolute;
-            height: 100%;
-            background-color: rgba($pink, 0.3);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0 0.7rem;
-            top: 0;
-            cursor: pointer;
 
             &__left {
                 left: 0;
             }
-
+    
             &__right {
                 right: 0;
-
+    
                 img {
                     transform: rotate(180deg);
-                }
-            }
-
-            &:hover {
-                background-color: $pink;
-            }
-        }
-
-        &__principal {
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            flex: 1;
-            margin: 0 4.5rem;
-
-            &__image {
-                height: 24rem;
-                width: 24rem;
-            }
-
-        }
-
-        &__slider {
-            display: flex;
-            overflow-x: scroll;
-            margin: 0 5.5rem;
-
-            &__image {
-                height: 8rem;
-                width: 8rem;
-                margin: 0 1rem 1rem 1rem;
-                min-width: 8rem;
-                cursor: pointer;
-
-                &:first-of-type {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-
-    .selected {
-        border: 4px solid $pink;
-    }
-}
-
-@media (max-width : 425px) {
-    body {
-        
-        p {
-            font-size: 0.6rem;
-        }
-
-        .carousel {
-
-            &__principal {
-    
-                &__image {
-                    height: 10rem;
-                    width: 10rem;
                 }
             }
         }

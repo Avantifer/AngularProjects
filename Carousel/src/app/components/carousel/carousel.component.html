@@ -1,5 +1,5 @@
 <body>
-    <div class="carousel">
+    <div class="carousel flexColumn">
         <div class="carousel__lateral carousel__lateral__left" (click)="previousImage()">
             <img src="../../../assets/images/chevron.svg" alt="Arrow Left">
         </div>
@@ -10,7 +10,7 @@
         <div class="carousel__lateral carousel__lateral__right" (click)="nextImage()">
             <img src="../../../assets/images/chevron.svg" alt="Arrow Right">
         </div>
-        <div class="carousel__slider">
+        <div class="carousel__slider flexRow">
             <img src="../../../assets/images/background-1.jpg" (click)="selectImage(1)" class="carousel__slider__image carousel__slider__image__1 selected" alt="Image of the slider">
             <img src="../../../assets/images/background-2.jpg" (click)="selectImage(2)" class="carousel__slider__image carousel__slider__image__2" alt="Image of the slider">
             <img src="../../../assets/images/background-3.jpg" (click)="selectImage(3)" class="carousel__slider__image carousel__slider__image__3" alt="Image of the slider">
