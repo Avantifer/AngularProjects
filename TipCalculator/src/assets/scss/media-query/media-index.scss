@@ -1,0 +1,10 @@
+@import '../style.scss';
+
+@include respond(tablet) {
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

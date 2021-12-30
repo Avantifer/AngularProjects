@@ -1,17 +1,9 @@
 @import 'assets/scss/style.scss';
+@import 'assets/scss/media-query/media-index.scss';
 
 html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: 'Roboto', sans-serif;
     background-color: $background-color;
-}
-
-@media (max-width : 1023px) {
-    body {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
 }

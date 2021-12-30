@@ -1,0 +1,19 @@
+input {
+    height: 3.2rem;
+    transform: translateY(-0.5rem);
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: right;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}   

@@ -1,0 +1,13 @@
+p {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+}
+
+h1, p {
+    color: $dark-gray;
+}

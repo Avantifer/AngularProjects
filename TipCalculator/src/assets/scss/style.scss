@@ -2,3 +2,12 @@
 
 @import 'generic/reset.scss';
 @import 'generic/flex.scss';
+
+@import 'utilities/mixins.scss';
+
+@import 'components/typography.scss';
+@import 'components/button.scss';
+@import 'components/input.scss';
+
+@import 'objects/buttonSelected.scss';
+@import 'objects/calculator.scss';

@@ -1,0 +1,95 @@
+.calculator {
+    height: 100%;
+    background-color: $white;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 44px rgb(148 146 120 / 23%);
+
+    &__results {
+
+        &__tipAmount {
+            border-bottom: 1px solid $light-gray;
+        }
+
+        &__tipAmount, &__totalPerson {
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+
+            p { 
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    &__inputs {
+        background-color: $ghost-white;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+
+        &__billAmount {
+            border-right: 1px solid $light-gray;
+            flex: 1;
+            align-items: center;
+
+            &__input {
+
+                img {
+                    margin-right: 2rem;
+                }
+
+                input {
+                    width: 15rem;
+                }
+            }
+        }
+
+        &__numberPeople{
+            &__input {
+                input {
+                    width: 7.5rem;
+                }
+            }
+        }
+
+        &__billAmount, &__numberPeople {
+            padding: 5rem 3rem;
+            
+            &__input {
+                border-bottom: 3px dotted $light-gray;
+                width: 100%;
+            }
+            
+            p {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    &__percentages {
+        padding: 2rem;
+        background-color: $ghost-gray;
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+        justify-content: space-evenly;
+        
+        button {
+            color: $light-blue;
+            background-color: $white;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__calculate {
+        padding: 2rem;
+        background-color: $white;
+        justify-content: flex-end;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        button {
+            background-color: $light-orange;
+            color: $white;
+            padding: 1rem 4rem;
+        }
+    }
+}
