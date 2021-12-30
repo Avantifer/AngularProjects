@@ -1,27 +1,27 @@
 <body>
     <div class="carousel">
-        <div class="carousel__lateral carousel__lateral__left">
+        <div class="carousel__lateral carousel__lateral__left" (click)="previousImage()">
             <img src="../../../assets/images/chevron.svg" alt="Arrow Left">
         </div>
         <div class="carousel__principal flexColumn">
-            <img src="../../../assets/images/background-1.jpg" class="carousel__principal__image" alt="Carousel principal image">
-            <p>Photo by Dave Hoefler Unsplash</p>
+            <img [src]="src" class="carousel__principal__image" alt="Carousel principal image">
+            <p>Photo by {{author}}</p>
         </div>
-        <div class="carousel__lateral carousel__lateral__right">
+        <div class="carousel__lateral carousel__lateral__right" (click)="nextImage()">
             <img src="../../../assets/images/chevron.svg" alt="Arrow Right">
         </div>
         <div class="carousel__slider">
-            <img src="../../../assets/images/background-1.jpg" class="carousel__slider__image carousel__slider__image__1" alt="Image of the slider">
-            <img src="../../../assets/images/background-2.jpg" class="carousel__slider__image carousel__slider__image__2" alt="Image of the slider">
-            <img src="../../../assets/images/background-3.jpg" class="carousel__slider__image carousel__slider__image__3" alt="Image of the slider">
-            <img src="../../../assets/images/background-4.jpg" class="carousel__slider__image carousel__slider__image__4" alt="Image of the slider">
-            <img src="../../../assets/images/background-5.jpg" class="carousel__slider__image carousel__slider__image__5" alt="Image of the slider">
-            <img src="../../../assets/images/background-6.jpg" class="carousel__slider__image carousel__slider__image__6" alt="Image of the slider">
-            <img src="../../../assets/images/background-7.jpg" class="carousel__slider__image carousel__slider__image__7" alt="Image of the slider">
-            <img src="../../../assets/images/background-8.jpg" class="carousel__slider__image carousel__slider__image__8" alt="Image of the slider">
-            <img src="../../../assets/images/background-9.jpg" class="carousel__slider__image carousel__slider__image__9" alt="Image of the slider">
-            <img src="../../../assets/images/background-10.jpg" class="carousel__slider__image carousel__slider__image__10" alt="Image of the slider">
-            <img src="../../../assets/images/background-11.jpg" class="carousel__slider__image carousel__slider__image__11" alt="Image of the slider">
+            <img src="../../../assets/images/background-1.jpg" (click)="selectImage(1)" class="carousel__slider__image carousel__slider__image__1 selected" alt="Image of the slider">
+            <img src="../../../assets/images/background-2.jpg" (click)="selectImage(2)" class="carousel__slider__image carousel__slider__image__2" alt="Image of the slider">
+            <img src="../../../assets/images/background-3.jpg" (click)="selectImage(3)" class="carousel__slider__image carousel__slider__image__3" alt="Image of the slider">
+            <img src="../../../assets/images/background-4.jpg" (click)="selectImage(4)" class="carousel__slider__image carousel__slider__image__4" alt="Image of the slider">
+            <img src="../../../assets/images/background-5.jpg" (click)="selectImage(5)" class="carousel__slider__image carousel__slider__image__5" alt="Image of the slider">
+            <img src="../../../assets/images/background-6.jpg" (click)="selectImage(6)" class="carousel__slider__image carousel__slider__image__6" alt="Image of the slider">
+            <img src="../../../assets/images/background-7.jpg" (click)="selectImage(7)" class="carousel__slider__image carousel__slider__image__7" alt="Image of the slider">
+            <img src="../../../assets/images/background-8.jpg" (click)="selectImage(8)" class="carousel__slider__image carousel__slider__image__8" alt="Image of the slider">
+            <img src="../../../assets/images/background-9.jpg" (click)="selectImage(9)" class="carousel__slider__image carousel__slider__image__9" alt="Image of the slider">
+            <img src="../../../assets/images/background-10.jpg" (click)="selectImage(10)" class="carousel__slider__image carousel__slider__image__10" alt="Image of the slider">
+            <img src="../../../assets/images/background-11.jpg" (click)="selectImage(11)" class="carousel__slider__image carousel__slider__image__11" alt="Image of the slider">
         </div>
     </div>
 </body>
