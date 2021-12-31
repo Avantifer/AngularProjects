@@ -1,1 +1,127 @@
 @import '../../../assets/scss/style.scss';
+
+body {
+    align-items: center;
+    justify-content: space-around;
+
+    .section {
+        position: relative;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        z-index: 3;
+        position: absolute;
+        top: -18%;
+        left: 18%;
+    }
+
+    .mat-expansion-panel {
+        width: 70%;
+        height: 9rem;
+
+        &:not([class*=mat-elevation-z]) {
+            box-shadow: none;
+        }
+
+    }
+
+    .mat-expanded {
+        background-color: $yellow;
+    }
+
+    .mat-expansion-panel-header {
+        height: 6rem;
+    }
+
+    .mat-expansion-panel-header-title {
+        background-color: $black;
+        flex-grow: 0;
+        width: 10%;
+    }
+
+    .mat-expansion-panel-header-description {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ::ng-deep .mat-expansion-indicator {
+        position: absolute;
+        right: 3rem;
+    }
+
+    ::ng-deep .mat-content {
+        height: 4rem;
+        border: 4px solid $black;
+        background-color: $white;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: $black;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        .section {
+            height: 11rem;
+        }
+    
+        img {
+            width: 3rem;
+            top: -8%;
+            left: 12%;
+        }
+    
+        p {
+            font-size: 0.5rem;
+            line-height: 0.8rem;
+        }
+
+        ::ng-deep .mat-expansion-indicator {
+            position: absolute;
+            right: 2rem;
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    body {
+        .section {
+            height: 14rem;
+        }
+    
+        img {
+            width: 3rem;
+            top: -8%;
+            left: 8%;
+        }
+    
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+    
+        .mat-expansion-panel {
+            width: 90%;
+            height: 100%;
+        }
+    
+        .mat-expansion-panel-header-title {
+            width: 4rem;
+        }
+    
+        .mat-expansion-panel-header-description {
+            width: 100%;
+        }
+    
+        
+    }
+}
