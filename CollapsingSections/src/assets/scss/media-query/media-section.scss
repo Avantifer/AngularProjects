@@ -1,0 +1,54 @@
+@include respond(phone) {
+    body {
+        .section {
+            height: 11rem !important;
+        }
+    
+        img {
+            width: 3rem !important;
+            top: -8% !important;
+            left: 12% !important;
+        }
+    
+        p {
+            font-size: 0.5rem !important;
+            line-height: 0.8rem !important;
+        }
+
+        ::ng-deep .mat-expansion-indicator {
+            position: absolute !important;
+            right: 2rem !important;
+        }
+    }
+}
+
+@include respond(tablet) {
+    body {
+        img {
+            width: 3rem !important;
+            top: -8% !important;
+            left: 8% !important;
+        }
+    
+        p {
+            font-size: 1rem !important;
+        }
+    }
+}
+
+@include respond(laptop) {
+    body {
+        .mat-expansion-panel {
+            width: 90% !important;
+            height: 100% !important;
+        }
+    
+        .mat-expansion-panel-header-title {
+            width: 4rem !important;
+        }
+    
+        .mat-expansion-panel-header-description {
+            width: 100% !important;
+        }
+    }
+}

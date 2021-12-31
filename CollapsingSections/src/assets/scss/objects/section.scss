@@ -1,0 +1,53 @@
+.section {
+    position: relative;
+    height: 14rem;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    z-index: 3;
+    position: absolute;
+    top: -18%;
+    left: 18%;
+}
+
+.mat-expansion-panel {
+    width: 70%;
+    height: 100%;
+
+    &:not([class*=mat-elevation-z]) {
+        box-shadow: none;
+    }
+
+}
+
+.mat-expanded {
+    background-color: $yellow;
+}
+
+.mat-expansion-panel-header {
+    height: 6rem;
+}
+
+.mat-expansion-panel-header-title {
+    background-color: $black;
+    flex-grow: 0;
+    width: 10%;
+}
+
+.mat-expansion-panel-header-description {
+    flex-direction: column;
+    justify-content: center;
+}
+
+::ng-deep .mat-expansion-indicator {
+    position: absolute;
+    right: 3rem;
+}
+
+::ng-deep .mat-content {
+    height: 4rem;
+    border: 4px solid $black;
+    background-color: $white;
+}
