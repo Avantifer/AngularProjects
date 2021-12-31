@@ -1,1 +1,13 @@
-<p>pin-verification works!</p>
+<body class="flexRow">
+    <div class="card flexColumn">
+        <h3 class="card__title">Authorization Code</h3>
+        <p class="card__paragraph">Please enter the code that we sent to (***) *** - 2819.</p>
+        <div class="card__pin flexRow" [formGroup]="pinInputs">
+            <input type="text" maxlength="1" class="card__pin__0" (keyup)="nextInput($event)" formControlName="number0">
+            <input type="text" maxlength="1" class="card__pin__1" (keyup)="nextInput($event)" formControlName="number1">
+            <input type="text" maxlength="1" class="card__pin__2" (keyup)="nextInput($event)" formControlName="number2">
+            <input type="text" maxlength="1" class="card__pin__3" formControlName="number3">
+        </div>
+        <button class="card__button" (click)="verificatePin()">Verify</button>
+    </div>
+</body>
