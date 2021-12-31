@@ -1,0 +1,14 @@
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    color: $white;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(93.32deg, #8D9EFF -10.93%, #A674FB 113.82%);
+    border: none;
+    padding: 1.5rem 16rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
