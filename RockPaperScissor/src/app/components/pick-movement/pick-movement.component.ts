@@ -12,4 +12,11 @@ export class PickMovementComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  movements : string[] = ['rock', 'paper', 'scissors'];
+  movementPC : string = this.movements[Math.round(Math.random() * 2)];
+  movementJP : string = '';
+
+  movementSelected(movement : number) {
+    this.movementJP = this.movements[movement];
+  }
 }

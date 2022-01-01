@@ -1,1 +1,17 @@
-<p>pick-movement works!</p>
+<body class="flexColumn">
+    <h1>pick one</h1>
+    <div class="movements flexRow">
+        <div class="movements__movement movements__rock flexColumn" (click)="movementSelected(0)">
+            <img src="../../../assets/image/rock.png" alt="Rock image">
+            <p>rock</p>
+        </div>
+        <div class="movements__movement movements__paper flexColumn" (click)="movementSelected(1)">
+            <img src="../../../assets/image/paper.png" alt="Paper image">
+            <p>paper</p>
+        </div>
+        <div class="movements__movement movements__scissors flexColumn" (click)="movementSelected(2)">
+            <img src="../../../assets/image/scissors.png" alt="Scissor image">
+            <p>scissors</p>
+        </div>
+    </div>
+</body>
