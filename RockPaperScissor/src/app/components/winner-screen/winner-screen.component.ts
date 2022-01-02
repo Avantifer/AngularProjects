@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-winner-screen',
@@ -12,4 +12,13 @@ export class WinnerScreenComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() movementJP : string = '';
+  @Input() movementPC : string = '';
+  @Input() winner : string = '';
+
+  @Output() reset : EventEmitter<boolean> = new EventEmitter();
+  
+  resetGame() {
+    this.reset.emit(true);
+  }
 }

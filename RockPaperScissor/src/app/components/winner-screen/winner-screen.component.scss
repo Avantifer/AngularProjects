@@ -50,6 +50,18 @@ body {
                 z-index: 2;
             }
         }
+
+        &__button {
+            position: absolute;
+            left: 42%;
+            top: 80%;
+            padding: 1rem 4rem;
+            font-family: 'Roboto Mono', sans-serif;
+            font-weight: bold;
+            background-color: transparent;
+            font-size: 1.5rem;
+            z-index: 3;
+        }
     }
 }
 
@@ -68,15 +80,31 @@ body {
     
             &__winner {
     
+                &__jp {
+                    img {
+                        left: -20rem;
+                    }
+                }
+
+                &__pc {
+                    img {
+                        right: -20rem;
+                    }
+                }
+
                 img {
                     position: absolute;
-                    left: -20rem;
+                    
                 }
     
                 h1 {
                     top: 10%;
                     left: 3rem;
                 }
+            }
+
+            &__button {
+                left: 15%;
             }
         }
     }
@@ -99,8 +127,12 @@ body {
     
                 h1 {
                     top: 10%;
-                    left: 17rem;
+                    left: 35%;
                 }
+            }
+
+            &__button {
+                left: 35%;
             }
         }
     }

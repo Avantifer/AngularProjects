@@ -1,1 +1,7 @@
-<app-winner-screen></app-winner-screen>
+
+<div *ngIf="movementJP === ''">
+    <app-pick-movement (movementJP)="setMovementJP($event)" (movementPC)="setMovementPC($event)" (winner)="setWinner($event)"></app-pick-movement>
+</div>
+<div *ngIf="movementJP != ''">
+    <app-winner-screen [movementJP]="movementJP" [movementPC]="movementPC" [winner]="winner" (reset)="resetGame($event)"></app-winner-screen>
+</div>
