@@ -1,0 +1,25 @@
+.movements {
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: space-evenly;
+
+    &__movement {
+        border: 2px solid $black;
+        align-items: center;
+        padding: 3rem;
+        cursor: pointer;
+
+        &:hover {
+            border: 8px solid $yellow;
+        }
+
+        img {
+            width: 14rem;
+            height: 14rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}

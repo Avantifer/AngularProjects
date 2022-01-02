@@ -1,0 +1,72 @@
+@include respond(alldevices) {
+    body {
+
+        .win {
+
+            &__movements {
+
+                img {
+                    width: 10rem !important;
+                    height: 10rem !important;
+                }
+            }
+    
+            &__winner {
+    
+                &__jp {
+                    img {
+                        left: -20rem !important;
+                    }
+                }
+
+                &__pc {
+                    img {
+                        right: -20rem !important;
+                    }
+                }
+
+                img {
+                    position: absolute !important;
+                    
+                }
+    
+                h1 {
+                    top: 10% !important;
+                    left: 3rem !important;
+                }
+            }
+
+            &__button {
+                left: 15% !important;
+            }
+        }
+    }
+}
+
+@include respond(tablet) {
+    body {
+
+        .win {
+
+            &__movements {
+
+                img {
+                    width: 19rem !important;
+                    height: 19rem !important;
+                }
+            }
+    
+            &__winner {
+    
+                h1 {
+                    top: 10% !important;
+                    left: 35% !important;
+                }
+            }
+
+            &__button {
+                left: 35% !important;
+            }
+        }
+    }
+}

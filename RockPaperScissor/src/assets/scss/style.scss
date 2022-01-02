@@ -2,3 +2,11 @@
 
 @import 'generic/flex.scss';
 @import 'generic/reset.scss';
+
+@import 'utilities/mixins.scss';
+
+@import 'components/typography.scss';
+@import 'components/button.scss';
+
+@import 'objects/movementsSet.scss';
+@import 'objects/winnerScreen.scss';

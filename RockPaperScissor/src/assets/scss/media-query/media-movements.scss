@@ -1,0 +1,40 @@
+@include respond(tablet) {
+    body {
+
+        .movements {
+
+            &__movement {
+    
+                img {
+                    width: 14rem !important;
+                    height: 14rem !important;
+                }
+            }
+        }
+    }
+}
+
+@include respond(alldevices) {
+    body {
+
+        .movements {
+            flex-direction: column !important;
+            align-items: center !important;
+            margin: 0 !important;
+
+            &__movement {
+                padding: 1rem !important;
+                margin-top: 1rem !important;
+
+                &:hover {
+                    border: 8px solid $yellow !important;
+                }
+    
+                img {
+                    width: 8rem !important;
+                    height: 6rem !important;
+                }
+            }
+        }
+    }
+}
