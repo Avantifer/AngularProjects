@@ -1,1 +1,62 @@
 @import '../../../assets/scss/style.scss';
+
+body {
+    width: 67.5vw;
+    height: 90vh;
+    padding: 0 2rem;
+    border-radius: 2rem;
+
+    .top-part {
+        justify-content: flex-end;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .information {
+        justify-content: center;
+
+        &__letter {
+            width: 50%;
+            margin-right: 3rem;
+
+            h1 {
+                color: $pink;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                line-height: 0.9;
+                font-size: 6.8rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 27px;
+
+                &:first-of-type {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__button {
+                margin-top: 2.5rem;
+                padding: 1rem 4rem;
+                border-radius: 4rem;
+                background-color: $yellow;
+                border: none;
+                font-weight: 900;
+                font-size: 1.5rem;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &__image {
+            height: 76vh;
+        }
+    }
+}
