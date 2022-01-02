@@ -1,0 +1,30 @@
+.top-part {
+    justify-content: flex-end;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.information {
+    justify-content: center;
+
+    &__letter {
+        width: 50%;
+        margin-right: 3rem;
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            &:first-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__image {
+        height: 76vh;
+    }
+}

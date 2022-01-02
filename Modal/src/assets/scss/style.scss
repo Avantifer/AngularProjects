@@ -1,4 +1,11 @@
 @import 'settings/variables.scss';
+@import 'settings/animations.scss';
 
 @import 'generic/reset.scss';
 @import 'generic/flex.scss';
+
+@import 'components/typography.scss';
+@import 'components/button.scss';
+
+@import 'objects/modal.scss';
+@import 'objects/products.scss';

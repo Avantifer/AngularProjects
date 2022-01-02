@@ -1,0 +1,12 @@
+@keyframes pulsing {
+    from {
+        opacity: 1;        
+    }
+    to {
+        height: 5rem;
+        width: 5rem;
+        top: 15%;
+        left: 21%;
+        opacity: 0;
+    }
+}
