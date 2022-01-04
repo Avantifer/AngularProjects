@@ -1,0 +1,18 @@
+.playlist {
+    gap: 1rem;
+
+    &__video {
+        gap: 1rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        
+        &__image {
+            height: 6rem;
+            width: 10rem;
+        }
+
+        &__title {
+            font-size: 1.15rem;
+        }
+    }
+}

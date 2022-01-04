@@ -1,0 +1,18 @@
+@include respond(toTablet) {
+    body {
+        .youtube {
+            flex-direction: column !important;
+        }
+
+        app-video {
+            padding: 0 !important;
+        }
+    }
+}
+
+@include respond(toLaptop) {
+    body {
+        overflow: scroll !important;
+        padding: 1rem 3rem !important;
+    }
+}

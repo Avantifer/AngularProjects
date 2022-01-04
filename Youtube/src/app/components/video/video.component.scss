@@ -1,23 +1,10 @@
 @import '../../../assets/scss/style.scss';
+@import '../../../assets/scss/media-query/media-video.scss';
 
 body {
     color: $white;
 
     .title {
         margin: 1rem 0;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        iframe {
-            height: 20rem;
-        }
-    }
-}
-
-@media (min-width: 769px) and (max-width : 1024px) {
-    body {
-        padding-right: 2.5rem !important;
     }
 }

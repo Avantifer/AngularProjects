@@ -1,0 +1,13 @@
+@include respond(toTablet) {
+    body {
+        iframe {
+            height: 20rem !important;
+        }
+    }
+}
+
+@include respond(onlyTablet) {
+    body {
+        padding-right: 2.5rem !important;
+    }
+}

@@ -1,46 +1,9 @@
 @import '../../../assets/scss/style.scss';
+@import '../../../assets/scss/media-query/media-playlist.scss';
 
 body {
     color: $white;
     width: 20vw;
     height: calc(100vh - 8rem);
     overflow-y: scroll;
-
-    .playlist {
-        gap: 1rem;
-
-        &__video {
-            gap: 1rem;
-            margin-right: 0.5rem;
-            cursor: pointer;
-            
-            &__image {
-                height: 6rem;
-                width: 10rem;
-            }
-
-            &__title {
-                font-size: 1.15rem;
-            }
-        }
-
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        width: 100% !important;
-        margin: 1.5rem 0 !important;
-    }
-}
-
-@media (max-width : 1024px) {
-    body {
-        .playlist__video {
-            &__image {
-                height: 7rem !important;
-                width: 7rem !important;
-            }
-        }
-    }
 }
