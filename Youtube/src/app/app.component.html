@@ -1,4 +1,7 @@
 <body>
-  <app-video></app-video>
-  <app-playlist></app-playlist>
+  <img src="../assets/images/logo.png" class="logo" alt="Youtube Logo">
+  <div class="youtube flexRow">
+    <app-video [video]="video"></app-video>
+    <app-playlist (videoSelected)="getVideo($event)"></app-playlist>
+  </div>
 </body>
