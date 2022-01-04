@@ -1,1 +1,8 @@
-<p>playlist works!</p>
+<body>
+    <div class="playlist flexColumn">
+        <div class="playlist__video flexRow" *ngFor="let video of videos" (click)="selectVideo(video.position)">
+            <img [src]="video.image" class="playlist__video__image" alt="">
+            <h2 class="playlist__video__title">{{video.title}}</h2>
+        </div>
+    </div>
+</body>

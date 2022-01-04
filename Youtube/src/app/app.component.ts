@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Youtube';
+
+  video : any = '';
+
+  getVideo(video : any) {
+    this.video = video;
+  }
 }

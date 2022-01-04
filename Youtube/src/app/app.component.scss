@@ -1,1 +1,40 @@
 @import '../assets/scss/style.scss';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: $black;
+    padding: 2rem 8rem;
+
+    .logo {
+        margin-bottom: 1rem;
+        width: 12rem;
+    }
+
+    app-video {
+        flex: 1;
+        padding-right: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        .youtube {
+            flex-direction: column !important;
+        }
+
+        app-video {
+            padding: 0 !important;
+        }
+    }
+}
+
+@media (max-width : 1024px) {
+    body {
+        overflow: scroll !important;
+        padding: 1rem 3rem !important;
+    }
+}
