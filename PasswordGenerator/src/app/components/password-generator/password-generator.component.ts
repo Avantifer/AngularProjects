@@ -67,9 +67,7 @@ export class PasswordGeneratorComponent implements OnInit {
       let ascii = this.fullarray[Math.floor(Math.random() * this.fullarray.length)];
       if (ascii != undefined) {
         password += String.fromCharCode(ascii);
-      }
-      
+      } 
     }
-    this.password = password.replace('', ' ');
   }
 }
