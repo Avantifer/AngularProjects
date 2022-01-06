@@ -1,1 +1,99 @@
-<p>blog works!</p>
+<body>
+    <mat-drawer-container class="blog">
+        <mat-drawer mode="side" opened class="blog__nav">
+            <h2 class="blog__nav__title">Table of Contents</h2>
+            <div *ngFor="let content of contents;">
+                <div class="blog__nav__content content__{{content.position}} flexRow" (click)="selectLink($event)">
+                    <div class="line"></div>
+                    <a href="#{{content.link}}">{{content.content}}</a>
+                </div>
+            </div>
+        </mat-drawer>
+        <mat-drawer-content class="blog__main">
+            <h1 class="blog__main__title">Framer is still alive and well… and it's a game-changer</h1>
+            <h2 class="blog__main__subtitle">A love letter to my prototyping tool of choice.</h2>
+            <p>Earlier, this week, this post came across my feed: <span>“Framer is Dead.”</span></p>
+            <p><i>Impossible.</i>  I've been using it non-stop for the past month.</p>
+            <p>Sadly, this post has gotten some traction, and I've seen it pop-up on several round-ups.</p>
+            <p>Two weeks ago, Framer launched <b>a new home page design and Smart Components,</b> with <b>Variants</b> coming out of Beta.
+            Looking at new features alone, it's very much alive and well.</p>
+            <p>The leading case this post made was that Framer was at fault for moving toward React. In doing so, it's alienating designers
+            that aren't code-savvy. Or, on the opposite end of the spectrum, over-empowering UX engineers who over-value the code.</p>
+            <p>Then, as if to drive the nail in the coffin: “Framer used to be about playing around. Now it's about building things.”
+            — Frankly, I'm not sure why “playing around” and “building things” have to be mutually exclusive.</p>
+            <p>Are we talking about the same product?</p>
+            <h1 id="Story" class="blog__main__links">My Story</h1>
+            <p>Before Framer, we were using <span>Invision</span> for prototyping. At best, this experience felt clunky. I was taking static images,
+            creating hot spots, and linking them together. If anything, it demonstrated how screens were linked together. But, during pitches,
+            there was still a considerable amount of hand waving and, “Imagine this. The user will scroll down, and this will happen…”</p>
+            <p>While this worked for some clients, others still had trouble making that leap, however big or small. There was even a fair amount
+            of redesigning once developers got involved. “Oh, I didn't realize that's what you meant.”</p>
+            <h1 id="Priming" class="blog__main__links">Priming</h1>
+            <div class="blog__main__links__priming flexRow">
+                <img src="../../../assets/images/design-details.jpeg" alt="Logo of design details">
+                <p>In November (2020), I started working with a new client, designing a native application. About the same time, I was listening
+                to the <span>Design Details Podcast, Episode 377: Future-Proof Designer.</span> One of the skills they talked about was prototyping. 
+                <b>The best designers at prototyping are the best communicators.</b></p>
+            </div>
+            <h2 class="blog__main__links__subtitle">The best designers at prototyping are the best communicators.</h2>
+            <p>Noted.</p>
+            <p>At that moment, I knew that the most effective way to get stakeholders on board was to create a prototype true to the app's experience.</p>
+            <p>That's the key: <b>an app is an experience.</b></p>
+            <p>When you're designing a native application, you're pushing pixels on a laptop or a desktop. The point is: it's a different medium; 
+            it's a different device than how the end-user will experience the final product.</p>
+            <p>I wanted to create a prototype that felt real. They could pull it up on their mobile device and feel like they were using an application — 
+            no smoke and mirrors. No handwaving. No magic.</p>
+            <h1 id="Framer" class="blog__main__links">Enter Framer</h1>
+            <p>I've known about Framer for years but never explored it as an option. This project seemed like the perfect opportunity and the perfect fit.</p>
+            <p>I've been blown away.</p>
+            <h1 id="No-coders" class="blog__main__links">For the no-coders. Framer is for you.</h1>
+            <p>You can import your designs directly from Figma or Sketch or design directly within Framer.</p>
+            <p>It has plenty of built-in, interactive components that you can use to build a prototype without writing a line of code.</p>
+            <img src="../../../assets/images/framer-insert-menu.png" class="blog__main__links__image" alt="Image of figma insert menu">
+            <p>Insert Menu within Framer</p>
+            <p class="blog__main__links__no-coders__middle">There's an entire library of third-party components, at your disposal.</p>
+            <img src="../../../assets/images/framer-community-plugins.gif" class="blog__main__links__image" alt="Gif of figma comunnity plugins">
+            <p>Framer Community Plugins</p>
+            <p class="blog__main__links__no-coders__middle">With the release of <span>Variants</span> and <span>Smart Components</span>, the sky's the limit.</p>
+            <img src="../../../assets/images/framer-smart-components.gif" class="blog__main__links__image" alt="Gif of Figma's component">
+            <h1 id="Code-savvy" class="blog__main__links">For the code-savvy. Framer is for you.</h1>
+            <p>In Framer, you can code custom React components(!!) and use them alongside designed components. This is mind-blowing to me.</p>
+            <h2 class="blog__main__links__subtitle">I can play with interactions while building something real.</h2>
+            <p>The sky truly is the limit.</p>
+            <h1 id="Spot" class="blog__main__links">My Sweet Spot: How Our Team is Using Framer</h1>
+            <p>I recognize that my skill set is different. I design and write code. Not all designers code, and not all developers design — and that's perfectly
+            fine. I've found Framer blends both worlds in a way that I've never seen in an application.</p>
+            <h1 id="Figma" class="blog__main__links">Figma</h1>
+            <p>I've done all the initial design work within Figma. I have more experience there, and it's allowed me to create multiple drafts and experiment
+            in design without muddying my prototype in Framer.</p>
+            <div class="blog__main__links__figma flexRow">
+                <img src="../../../assets/images/figma-sidebar.png" alt="Image of the Figma's Sidebar">
+                <p>Once the design is cleaned up, I have a page in Figma that I use specifically for a hand-off. This keeps unwanted elements out of Framer</p>
+            </div>
+            <h1 id="Desktop" class="blog__main__links">Framer Desktop</h1>
+            <p>You can do everything within the browser, through Framer Web. In fact, Framer Web has more features than Framer Desktop.</p>
+            <p>However, with Framer Desktop, I can directly access the code folder. Meaning, I can write custom ****React components within <b>VS Code,</b> my choice IDE.</p>
+            <p>I also have access to the <b>package.json</b> file to install npm packages, like any other project. This only extends my toolset, giving 
+            me access to packages like <span>Styled Components</span> and <span> date-fns.</span></p>
+            <p>All code is committed to <b>version control,</b> either <span>GitHub</span> or <span>BitBucket</span>. This creates a better workflow for me, 
+            but also gives easy access to the engineers on the project.</p>
+            <h4>JSON Data Files</h4>
+            <p>I've created JSON files that outline the data. The state of the app and its design change based on the data passed in.</p>
+            <p>What does it look like to have 1 notification vs. 12? What happens when the user has overdue payments? What does the app look like when the user is 
+            in Phase 1 vs. Phase 3 of the program? Instead of creating prototypes for each use case, I update the data passed in.</p>
+            <p>We can always change the shape of the data in my JSON file, but it does have the potential to mirror a potential GraphQL query.</p>
+            <h4>Sharing the Project</h4>
+            <p>Once I have a working prototype, I'll upload the project to <b>Framer Web.</b> This makes it easy to generate share links. Even better, if someone 
+            has the <span>Framer Preview App</span> on their mobile device, I can generate a QR Code that allows them to interact with the prototype on their phone,
+            just like the final native app.</p>
+            <img src="../../../assets/images/framer-qr-code.png" class="blog__main__links__image" alt="Image of Figma's QRCode">
+            <p>Generating a QR Code for Framer Preview App</p>
+            <h1 id="Schedule" class="blog__main__links">Tight Developer Schedule</h1>
+            <p>As with most projects, this one has a tight developer schedule. One of the biggest perks that we've found is that Framer has gotten us to the end result 
+            faster. I'm able to hand over the React components I've created with minimal refactoring.</p>
+            <p>While this process might sound more like <i>building</i> instead of <i>experimenting</i>, I didn't list in detail all the “play” that is
+            woven throughout the entire process.</p>
+            <p class="blog__main__links__last">Framer is very much alive and well.</p>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</body>
