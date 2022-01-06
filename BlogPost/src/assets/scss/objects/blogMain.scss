@@ -1,0 +1,69 @@
+.blog {
+    &__main {
+        background-color: $white;
+        padding: 4.5rem 20% 0 10%;
+    
+        &__title {
+            font-weight: 900;
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            color: $black;
+            margin-bottom: 1rem;
+        }
+    
+        &__subtitle {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+    
+        &__links {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+    
+            &__subtitle {
+                color: $gray;
+                font-weight: 400;
+                width: 80%;
+                padding-left: 10%;
+                margin-bottom: 2rem;
+            }
+    
+            &__image {
+                width: 100%;
+                transform: scale(1.1) translateX(-20px);
+                margin: 3rem 0 1rem 0;
+            }
+    
+            &__priming, &__figma {
+                align-items: flex-start;
+                margin-bottom: 4rem;
+                
+                img {
+                    transform: translate(-40px, -14px);
+                    height: 17rem;
+                    padding-right: 1rem;
+                }                    
+            }
+    
+            &__figma {
+                margin-top: 3rem;
+    
+                img {
+                    height: 14rem ;
+                }
+            }
+    
+            &__no-coders {
+                &__middle {
+                    padding-left: 4rem;
+                    margin-bottom: 2rem;
+                }
+            }
+    
+            &__last {
+                margin-bottom: 4rem !important;
+            }
+        }
+    }
+}

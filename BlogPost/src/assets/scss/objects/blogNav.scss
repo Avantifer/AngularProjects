@@ -1,0 +1,21 @@
+.blog {
+    &__nav {
+        width: 30%;
+        margin-right: 0.5rem;
+        padding: 9rem 0 0 9rem;
+        border: none;
+
+        &__content {
+            margin: 1.8rem 0;
+            z-index: 2;
+        }
+
+        &__title {
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-left: 1rem;
+        }
+    }
+}

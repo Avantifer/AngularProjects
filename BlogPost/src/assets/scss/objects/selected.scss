@@ -1,0 +1,18 @@
+.selected {
+
+    .line {
+        width: 1.5px;
+        height: 20px;
+        background-color: $pink;
+        margin-right: 1rem;
+    }
+
+    a {
+        font-weight: 700;
+        color: $pink;
+    }
+}
+
+.line {
+    margin-right: 1rem;
+}
