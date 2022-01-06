@@ -1,0 +1,12 @@
+::ng-deep .mat-checkbox-inner-container {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: $light-blue !important;
+}
+
+::ng-deep .mat-checkbox-checkmark-path {
+    stroke-width: 4px !important;
+}

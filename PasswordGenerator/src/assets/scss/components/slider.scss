@@ -1,0 +1,34 @@
+.mat-slider {
+    width: 17% !important;
+    transform: translateX(-50px) !important;
+}
+
+::ng-deep .mat-slider-horizontal .mat-slider-track-background {
+    height: 0.6rem !important;
+    background-color: $light-gray !important;
+}
+
+::ng-deep .mat-slider-horizontal .mat-slider-track-wrapper{
+    height: 0.6rem !important;
+    border-radius: 4rem !important;
+}
+
+::ng-deep .mat-slider-horizontal .mat-slider-track-fill {
+    height: 0.6rem !important;
+}
+
+::ng-deep .mat-slider-thumb {
+    bottom: -19px !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: $light-blue !important;
+}
+
+::ng-deep .mat-slider:not(.mat-slider-disabled):not(.mat-slider-sliding) .mat-slider-thumb {
+    right: -25px !important;
+    background-color: $light-blue !important;
+}
+
+::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: $light-gray !important;
+}
