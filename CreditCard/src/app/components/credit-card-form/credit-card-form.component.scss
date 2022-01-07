@@ -33,6 +33,10 @@ body {
         &__back {
             transform: rotateY(90deg);
             
+            * {
+                cursor: none;
+            }
+
             &__holder {
                 font-family: 'Beth Ellen', sans-serif;
                 font-size: 1.5rem;
@@ -49,6 +53,9 @@ body {
         }
 
         &__front {
+            * {
+                cursor: none;
+            }
 
             &__number {
                 top: 45%;
@@ -72,6 +79,7 @@ body {
                 letter-spacing: 1.5px;
             }
         }
+        
         &:hover {
             .creditCard__back {
                 transform: rotateY(0);
@@ -97,7 +105,6 @@ body {
                     width: 85%;                    
                 }
             }
-
         }
 
         &__bottom {
@@ -112,8 +119,6 @@ body {
             }
         }
     }
-
-
 }
 
 .shadow {
@@ -154,4 +159,5 @@ button {
     font-weight: 700;
     border: none;
     border-radius: 1rem;
+    cursor: pointer;
 }
