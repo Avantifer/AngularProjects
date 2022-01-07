@@ -1,0 +1,30 @@
+.creditCard {
+    position: absolute;
+    height: 50vh;
+    width: 85vh;
+    top: 0;
+    left: 30%;
+    font-family: 'Courier Prime', sans-serif;
+
+    &__front, &__back {
+        position: absolute;
+        transition: all 0.8s ease;
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        * {
+            position: absolute;
+        }
+    }
+
+    &:hover {
+        .creditCard__back {
+            transform: rotateY(0);
+        }
+    }
+}

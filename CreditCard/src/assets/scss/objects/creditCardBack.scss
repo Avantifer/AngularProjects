@@ -1,0 +1,24 @@
+.creditCard {
+
+    &__back {
+        transform: rotateY(90deg);
+        
+        * {
+            cursor: none;
+        }
+
+        &__holder {
+            font-family: 'Beth Ellen', sans-serif;
+            font-size: 1.5rem;
+            top: 35%;
+            left: 17%;
+        }
+
+        &__cvv {
+            font-weight: 700;
+            font-size: 1.2rem;
+            top: 40.5%;
+            left: 75%;
+        }
+    }
+}

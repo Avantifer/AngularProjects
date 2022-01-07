@@ -1,0 +1,30 @@
+.creditCard {
+
+    &__front {
+        * {
+            cursor: none;
+        }
+
+        &__number {
+            top: 45%;
+            left: 16.5%;
+            font-size: 2.25rem;
+        }
+
+        &__date {
+            top: 59.5%;
+            left: 53%;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        &__holder {
+            top: 70%;
+            left: 17%;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+}
