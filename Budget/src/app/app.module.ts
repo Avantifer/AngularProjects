@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BudgetComponent } from './components/budget/budget.component';
 import { ExpensesComponent } from './components/expenses/expenses.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { ExpensesComponent } from './components/expenses/expenses.component';
     ExpensesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

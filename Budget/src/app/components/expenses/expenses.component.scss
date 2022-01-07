@@ -1,0 +1,8 @@
+@import '../../../assets/scss/style.scss';
+
+body {
+    height: calc(100vh - 10rem);
+    width: calc(100% - 10rem);
+    background-color: $black;
+    padding: 5rem;
+}
