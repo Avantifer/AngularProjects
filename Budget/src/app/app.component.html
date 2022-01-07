@@ -1,6 +1,6 @@
 <body class="flexRow">
-  <app-budget></app-budget>
-  <app-expenses></app-expenses>
+  <app-budget (article)="getArticle($event)" (budgetAmount)="getBudgetAmount($event)"></app-budget>
+  <app-expenses [article]="article" (allExpenses)="getExpenses($event)"></app-expenses>
   <div class="results flexColumn">
     <div class="results__row flexRow">
       <p>Income</p>
@@ -8,9 +8,9 @@
       <p>Balance</p>
     </div>
     <div class="results__row flexRow">
-      <h1>300.00€</h1>
-      <h1>300.00€</h1>
-      <h1>300.00€</h1>
+      <h1>{{budgetAmount.toFixed(2)}}€</h1>
+      <h1>{{expenses.toFixed(2)}}€</h1>
+      <h1 class="balance">{{balance.toFixed(2)}}€</h1>
     </div>
   </div>
 </body>

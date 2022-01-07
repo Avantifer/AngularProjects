@@ -1,18 +1,18 @@
 <body>
     <h1 class="title">Simplified Budget</h1>
-    <div class="budgetAmount">
-        <input type="text">
+    <div class="budgetAmount" [formGroup]="budgetForm">
+        <input type="text" formControlName="budgetAmount">
         <p>Budget Amount</p>
     </div>
-    <div class="budgetArticles flexRow">
+    <div class="budgetArticles flexRow" [formGroup]="articleForm">
         <div class="budgetArticles__expense">
-            <input type="text">
+            <input type="text" formControlName="articleExpense">
             <p>Expense</p>
         </div>
-        <div class="budgetArticles__amount">
-            <input type="text">
+        <div class="budgetArticles__amount" [formGroup]="articleForm">
+            <input type="text" formControlName="articleAmount">
             <p>Amount</p>
         </div>
-        <img src="../../../assets/images/plus.svg" alt="Add Image">
+        <img src="../../../assets/images/plus.svg" alt="Add Image" (click)="sendArticle()">
     </div>
 </body>

@@ -1,65 +1,10 @@
 <body>
     <h2 class="title">Expenses</h2>
     <div class="articles flexColumn">
-        <div class="articles__article articles__article__1 flexRow">
+        <div class="articles__article articles__article__{{i}} flexRow" *ngFor="let article of allArticles; let i = index">
             <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
-        </div>
-        <div class="articles__article articles__article__1 flexRow">
-            <p>Starbucks</p>
-            <p>5.54€</p>
-            <img src="../../../assets/images/trash.svg" alt="Delete Icon">
+            <p>{{article.expense}}€</p>
+            <img src="../../../assets/images/trash.svg" alt="Delete Icon" (click)="deleteArticle(i)">
         </div>
     </div>
 </body>
