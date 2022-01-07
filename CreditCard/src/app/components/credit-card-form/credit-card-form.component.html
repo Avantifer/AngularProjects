@@ -1,35 +1,35 @@
 <body class="flexRow flexCenter">
     <div class="creditCard">
         <div class="creditCard__front">
-            <img src="../../../assets/images/cc__discover--front.png" alt="">
-            <p class="creditCard__front__number main shadow">4242 4242 4242 4242</p>
-            <p class="creditCard__front__number main">4242 4242 4242 4242</p>
-            <p class="creditCard__front__date main shadow">12/2002</p>
-            <p class="creditCard__front__date main">12/2002</p>
-            <p class="creditCard__front__holder main shadow">Fernando Ruiz</p>
-            <p class="creditCard__front__holder main">Fernando Ruiz</p>
+            <img src="../../../assets/images/cc__discover--front.png" class="creditCard__front__image" alt="">
+            <p class="creditCard__front__number main shadow">{{cardNumber}}</p>
+            <p class="creditCard__front__number main">{{cardNumber}}</p>
+            <p class="creditCard__front__date main shadow">{{month}} / {{year}}</p>
+            <p class="creditCard__front__date main">{{month}} / {{year}}</p>
+            <p class="creditCard__front__holder main shadow">{{cardHolder}}</p>
+            <p class="creditCard__front__holder main">{{cardHolder}}</p>
         </div>
         <div class="creditCard__back">
-            <img src="../../../assets/images/cc__discover--back.png" alt="">
-            <p class="creditCard__back__holder">Fernando Ruiz</p>
-            <p class="creditCard__back__cvv">123</p>
+            <img src="../../../assets/images/cc__discover--back.png" class="creditCard__back__image" alt="">
+            <p class="creditCard__back__holder">{{cardHolder}}</p>
+            <p class="creditCard__back__cvv">{{cvv}}</p>
         </div>
     </div>
-    <div class="form">
+    <div class="form" [formGroup]="creditForm">
         <div class="form__top flexRow">
             <div class="form__top__field">
                 <p>Card Number</p>
-                <input type="text">
+                <input type="text" formControlName="cardNumber">
             </div>
             <div class="form__top__field">
                 <p>Card Holder</p>
-                <input type="text">
+                <input type="text" formControlName="cardHolder">
             </div>
         </div>
         <div class="form__bottom flexRow">
             <div class="form__bottom__field">
                 <p>Expiration Date</p>
-                <select>
+                <select formControlName="month">
                     <option disabled selected>Month</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -46,7 +46,7 @@
                 </select>
             </div>
             <div class="form__bottom__field">
-                <select>
+                <select formControlName="year">
                     <option disabled selected>Year</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
@@ -62,9 +62,9 @@
             </div>
             <div class="form__bottom__field">
                 <p>CVV</p>
-                <input type="text">
+                <input type="text" formControlName="cvv">
             </div>
         </div>
-        <button class="form__button">Submit</button>
+        <button class="form__button" (click)="submitCreditCard()">Submit</button>
     </div>
 </body>
