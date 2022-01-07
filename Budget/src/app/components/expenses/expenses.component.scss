@@ -5,4 +5,45 @@ body {
     width: calc(100% - 10rem);
     background-color: $black;
     padding: 5rem;
+
+    .title {
+        color: $lime;
+        margin-bottom: 2rem;
+    }
+
+    .articles{
+        width: 90%;
+        align-items: center;
+        
+        &__article {
+            width: 100%;
+            color: $white;
+            justify-content: space-between;
+            border-bottom: 1px solid $light-gray;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding: 1rem 2rem;
+        width: calc(100% - 4rem);
+        height: calc(100vh - 2rem);
+
+        .articles{
+            width: 100%;
+            align-items: center;
+            
+            &__article {
+                width: 100%;
+                color: $white;
+                justify-content: space-between;
+                border-bottom: 1px solid $light-gray;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
