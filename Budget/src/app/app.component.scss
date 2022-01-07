@@ -1,69 +1,10 @@
 @import '../assets/scss/style.scss';
+@import '../assets/scss/media-query/media-app.scss';
 
 body {
     height: 100vh;
 
-    
     app-budget, app-expenses {
         width: 50%;
-    }
-
-    .results {
-        width: 100vw;
-        height: 20%;
-        background-color: $white;
-        position: fixed;
-        bottom: 0;
-        padding: 1rem 0;
-        justify-content: center;
-
-        &__row {
-            justify-content: space-evenly;
-
-            p {
-                font-size: 1.2rem;
-                font-weight: 700;
-                color: $gray;
-            }
-
-            h1 {
-                font-size: 3.4rem;
-
-                &.positive {
-                    color: $green;
-                }
-
-                &.negative {
-                    color: $red;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1023px) {
-    body {
-        flex-direction: column !important;
-
-        app-budget, app-expenses {
-            width: 100%;
-            height: 50%;
-        }
-
-        .results {
-            height: 15%;
-
-            &__row {
-                p {
-                    font-size: 0.8rem;
-                    font-weight: 700;
-                    color: $gray;
-                }
-    
-                h1 {
-                    font-size: 1.3rem;
-                }
-            }
-        }
     }
 }

@@ -1,9 +1,9 @@
-<body>
-    <h2 class="title">Expenses</h2>
+<body class="body">
+    <h2 class="titleExpenses">Expenses</h2>
     <div class="articles flexColumn">
         <div class="articles__article articles__article__{{i}} flexRow" *ngFor="let article of allArticles; let i = index">
-            <p>Starbucks</p>
-            <p>{{article.expense}}€</p>
+            <span>Starbucks</span>
+            <span>{{article.expense}}€</span>
             <img src="../../../assets/images/trash.svg" alt="Delete Icon" (click)="deleteArticle(i)">
         </div>
     </div>

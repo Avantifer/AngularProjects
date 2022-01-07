@@ -1,0 +1,21 @@
+@include respond(toLaptop) {
+    body {
+        padding: 1rem 2rem !important;
+        width: calc(100% - 4rem) !important;
+
+        .titleBudget {
+            font-size: 1.7rem !important;
+            margin-bottom: 0.6rem !important;
+        }
+
+        .budgetAmount {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .budgetArticles {
+            &__expense, &__amount {
+                width: 25% !important;
+            }
+        }
+    }
+}

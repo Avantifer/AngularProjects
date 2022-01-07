@@ -1,0 +1,7 @@
+@mixin respond($breakpoint){
+    @if $breakpoint == toLaptop {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+}

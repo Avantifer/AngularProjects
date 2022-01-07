@@ -1,0 +1,26 @@
+@include respond(toLaptop) {
+    body {
+        flex-direction: column !important;
+
+        app-budget, app-expenses {
+            width: 100% !important;
+            height: 50% !important;
+        }
+
+        .results {
+            height: 15% !important;
+
+            &__row {
+                span {
+                    font-size: 0.8rem !important;
+                    font-weight: 700 !important;
+                    color: $gray !important;
+                }
+    
+                h1 {
+                    font-size: 1.3rem !important;
+                }
+            }
+        }
+    }
+}

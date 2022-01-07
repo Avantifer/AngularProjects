@@ -1,50 +1,7 @@
 @import '../../../assets/scss/style.scss';
+@import '../../../assets/scss/media-query/media-expenses.scss';
 
 body {
-    height: calc(100vh - 10rem);
-    width: calc(100% - 10rem);
     background-color: $black;
-    padding: 5rem;
     overflow-y: scroll;
-
-    .title {
-        color: $lime;
-        margin-bottom: 2rem;
-    }
-
-    .articles{
-        width: 90%;
-        align-items: center;
-        
-        &__article {
-            width: 100%;
-            color: $white;
-            justify-content: space-between;
-            border-bottom: 2px solid $gray;
-            padding-bottom: 1rem;
-            margin-bottom: 1.5rem;
-        }
-    }
-}
-
-@media (max-width: 1023px) {
-    body {
-        padding: 1rem 2rem;
-        width: calc(100% - 4rem);
-        height: calc(100vh - 2rem);
-
-        .articles{
-            width: 100%;
-            align-items: center;
-            
-            &__article {
-                width: 100%;
-                color: $white;
-                justify-content: space-between;
-                border-bottom: 1px solid $light-gray;
-                padding-bottom: 1rem;
-                margin-bottom: 1rem;
-            }
-        }
-    }
 }

@@ -1,0 +1,21 @@
+@include respond(toLaptop) {
+    body {
+        padding: 1rem 2rem !important;
+        width: calc(100% - 4rem) !important;
+        height: calc(100vh - 2rem) !important;
+
+        .articles{
+            width: 100% !important;
+            align-items: center !important;
+            
+            &__article {
+                width: 100% !important;
+                color: $white !important;
+                justify-content: space-between !important;
+                border-bottom: 1px solid $light-gray !important;
+                padding-bottom: 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}

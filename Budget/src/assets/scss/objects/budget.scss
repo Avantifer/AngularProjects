@@ -1,0 +1,23 @@
+.titleBudget {
+    color : $white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.budgetAmount {
+    width: 80%;
+    position: relative;
+    margin-bottom: 8rem;  
+}
+
+.budgetArticles {
+    &__expense, &__amount {
+        width: 30%;
+        position: relative;
+        margin-right: 3.5rem;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
